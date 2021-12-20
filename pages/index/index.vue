@@ -31,6 +31,10 @@
 		<view class="home_good_list">
 			<vouchers :list='goods_ist'></vouchers>
 		</view>
+		<view class="home_ap-link">
+			<text>广州景瑞科技有限公司版权所有</text>
+			<text>粤ICP备19145623号</text>
+		</view>
 	</view>
 </template>
 
@@ -165,8 +169,21 @@
 			}
 		}
 
-		.bannersBox {
+		.home_bannersBox {
 			margin-top: 90rpx;
+		}
+		.home_ap-link{
+			width: 100%;
+			height: 30rpx;
+			margin-bottom: 120rpx;
+			text-align: center;
+			font-size: 25rpx;
+			text{
+				display: block;
+				width: 100%;
+				overflow: hidden;
+				margin-top: 10rpx;
+			}
 		}
 	}
 </style>
