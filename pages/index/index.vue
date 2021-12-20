@@ -35,6 +35,7 @@
 			<text>广州景瑞科技有限公司版权所有</text>
 			<text>粤ICP备19145623号</text>
 		</view>
+		<citySelect @back_city="back_city" v-if="cityselec"></citySelect>
 	</view>
 </template>
 
@@ -43,12 +44,14 @@
 	import banners from '@/components/banners/banners';
 	import navIcon from '@/components/navIcon/navIcon';
 	import vouchers from '@/components/vouchers/vouchers.vue';
+	import citySelect from '@/components/linzq-home/linzq-city.vue';
 	export default {
 		components: {
 			search,
 			banners,
 			navIcon,
-			vouchers
+			vouchers,
+			citySelect
 		},
 		data() {
 			return {
@@ -78,7 +81,7 @@
 						url: "/aggregation/sellingHot/sellingHot",
 					},
 				],
-				goods_ist: [{
+				goods_ist: [{ //商品
 					cover_pic: "http://yingmlife-1302693724.cos.ap-guangzhou.myqcloud.com/uploads/images/original/20211018/af8287e1940ea564d15c60345c790bea.jpg",
 					enable_express: "0",
 					freight_id: "5",
@@ -99,8 +102,21 @@
 					use_virtual_sales: "1",
 					video_url: "",
 					virtual_sales: "1256",
-				}]
+				}],
+				cityselec:false,//城市选择
 			}
+		},
+		methods:{
+			setCITY(){ //选择城市
+				this.cityselec = true
+			},
+			back_city(e) { //城市选择回显
+				if (e !== 'no') {
+					this.cityselec = false;
+				} else {
+					this.cityselec = false;
+				}
+			},
 		}
 	}
 </script>
