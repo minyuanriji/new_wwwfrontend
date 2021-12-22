@@ -10,6 +10,12 @@
 			return {
 				
 			};
+		},
+		onShow() {
+			uni.hideTabBar(); //隐藏tab
+		},
+		onHide(){
+			uni.showTabBar(); //显示tab
 		}
 	}
 </script>
