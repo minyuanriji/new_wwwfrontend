@@ -18,6 +18,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/car/car",
+            "style" :                                                                                    
+           {
+               "navigationBarTitleText": "购物车",
+               "navigationBarBackgroundColor": "#fff",
+               "navigationBarTextStyle": "black"
+           }           
+        }
     ],
 	"tabBar":{
 		"color": "#000000",
@@ -44,7 +53,7 @@
 				"selectedIconPath": "static/paihangbang.png"
 			},
 			{
-				"pagePath": "pages/rankingList/rankingList",
+				"pagePath": "pages/car/car",
 				"text": "购物车",
 				"iconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/44ccb1bc5bda6564a27a47fc7e25a2d9.png",
 				"selectedIconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/ad1f0c7a0d38ee4ac72152d70053abf1.png"
