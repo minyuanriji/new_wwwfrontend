@@ -27,6 +27,26 @@
              "navigationBarTextStyle": "black"
            }           
         }
+        ,{
+            "path" : "pages/usercenter/usercenter",
+            "style" :                                                                                    
+            {
+              "navigationBarTitleText": "个人中心",
+              "navigationBarBackgroundColor": "#fff",
+              "navigationBarTextStyle": "black"
+            }     
+            
+        }
+        ,{
+            "path" : "pages/store/store",
+            "style" :                                                                                    
+           {
+             "navigationBarTitleText": "门店商铺",
+             "navigationBarBackgroundColor": "#fff",
+             "navigationBarTextStyle": "black"
+           }     
+            
+        }
     ],
 	"tabBar":{
 		"color": "#000000",
@@ -47,7 +67,7 @@
 				"selectedIconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/9cd2c03e4967cbed0d323a057da390d5.png"
 			},
 			{
-				"pagePath": "pages/rankingList/rankingList",
+				"pagePath": "pages/store/store",
 				"text": "门店商铺",
 				"iconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210702/0bc8ae0d92adb3ddf841ceb07cc1cf4f.png",
 				"selectedIconPath": "static/paihangbang.png"
@@ -59,7 +79,7 @@
 				"selectedIconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/ad1f0c7a0d38ee4ac72152d70053abf1.png"
 			},
 			{
-				"pagePath": "pages/me/me",
+				"pagePath": "pages/usercenter/usercenter",
 				"text": "个人中心",
 				"iconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/08ba1fe2754bc566116a39deee8fdd90.png",
 				"selectedIconPath": "https://www.mingyuanriji.cn/web//uploads/images/original/20210506/e6e4ff50b6ef41c1ab17775f676d7b4f.png"
